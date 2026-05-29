@@ -1,13 +1,8 @@
 # Trained model files - keep local only
-*.h5
 *.keras
-*.pkl
 *.joblib
 *.pt
 *.pth
-
-# MediaPipe model file - keep local only
-*.task
 
 # Videos - keep local only
 *.mp4
