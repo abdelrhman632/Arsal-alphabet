@@ -8,7 +8,7 @@ import joblib
 # LOAD MODEL
 # =========================
 
-model = joblib.load("arasl_alphabet_model_2.pkl")
+model = joblib.load("/root/app/arasl_alphabet_model_2.pkl")
 
 # =========================
 # MEDIAPIPE HANDS
@@ -69,4 +69,7 @@ demo = gr.Interface(
 # =========================
 
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=10000)
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=7860
+    )
