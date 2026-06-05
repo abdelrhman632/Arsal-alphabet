@@ -1,8 +1,6 @@
-gradio
+streamlit
 numpy
 pillow
-pandas
 scikit-learn
 mediapipe
-opencv-python-headless
 joblib

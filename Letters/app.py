@@ -13,6 +13,7 @@ model = joblib.load("/root/app/arasl_alphabet_model_2.pkl")
 # =========================
 # MEDIAPIPE HANDS
 # =========================
+print("RUNNING NEW APP VERSION")
 
 mp_hands = mp.solutions.hands
 
@@ -21,7 +22,6 @@ hands = mp_hands.Hands(
     max_num_hands=1,
     min_detection_confidence=0.3
 )
-
 # =========================
 # PREDICTION FUNCTION
 # =========================
