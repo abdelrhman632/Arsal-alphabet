@@ -1,6 +1,7 @@
 streamlit
-numpy
+numpy==1.26.4
 pillow
 scikit-learn
-mediapipe
+mediapipe==0.10.14
+opencv-python-headless
 joblib
