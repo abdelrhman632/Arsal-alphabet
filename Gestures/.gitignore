@@ -1,0 +1,29 @@
+# Trained model files - keep local only
+*.keras
+*.joblib
+*.pt
+*.pth
+
+# Videos - keep local only
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Notebook cache
+.ipynb_checkpoints/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local folders
+outputs/
+runs/
+raw_dataset/
