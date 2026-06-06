@@ -6,6 +6,7 @@ image = (
     modal.Image.debian_slim(python_version="3.11")
     .apt_install("libgl1", "libglib2.0-0")
     .pip_install_from_requirements("Letters/requirements.txt")
+    .add_local_dir("Letters", remote_path="/root/Letters")
 )
 
 
@@ -21,9 +22,7 @@ def gradio_app():
     import sys
 
     letters_dir = "/root/Letters"
-    if letters_dir not in sys.path:
-        sys.path.insert(0, letters_dir)
-
+    sys.path.insert(0, letters_dir)
     os.chdir(letters_dir)
 
     from app import demo
