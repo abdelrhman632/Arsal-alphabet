@@ -3,13 +3,15 @@ import cv2
 import mediapipe as mp
 import numpy as np
 import joblib
+from pathlib import Path
 
 # =========================
 # LOAD MODEL
 # =========================
 
-model = joblib.load("/root/app/arasl_alphabet_model_2.pkl")
 
+MODEL_PATH = Path(__file__).parent / "arasl_alphabet_model_2.pkl"
+model = joblib.load(MODEL_PATH)
 # =========================
 # MEDIAPIPE HANDS
 # =========================
