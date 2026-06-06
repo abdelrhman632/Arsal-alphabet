@@ -1,7 +1,11 @@
-numpy
-pandas
-scikit-learn
+gradio==4.44.1
+huggingface_hub==0.25.2
+fastapi==0.112.4
+starlette==0.37.2
+pydantic==2.8.2
 tensorflow
-opencv-python
 mediapipe
-gradio
+opencv-python-headless
+numpy
+scikit-learn
+joblib
